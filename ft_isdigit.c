@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pc <pc@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/26 22:04:51 by pc                #+#    #+#             */
-/*   Updated: 2022/06/28 21:24:50 by pc               ###   ########.fr       */
+/*   Created: 2022/06/28 21:24:07 by pc                #+#    #+#             */
+/*   Updated: 2022/06/28 21:24:10 by pc               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int    ft_isalpha(int c)
+int    ft_isdigit(int c)
 {
-    if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))    {
+     printf("\nc  : %d", c);
+    if ((c >= 0 && c <= 9))    {
         return 1;
     } else {
         return 0;
-    }
-;}
-
+ }
+}
 
 // #include <stdio.h>
 // int main()
 // {
-    // int c = 'b';
-    // printf("\nIf result = 1 -> your input is an alphabet letter. If result = 0 -> not a letter!");
-    // printf("\nResult  : %d", ft_isalpha(c));
+    // int c = 2;
+    // printf("\nIf result = 1 -> your input is a number between 0 to 9. If result = 0 -> not a number!");
+    // printf("\nResult  : %d", ft_isdigit(c));
     // printf("\n");
 // }
+// 
