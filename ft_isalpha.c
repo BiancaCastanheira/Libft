@@ -3,28 +3,38 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pc <pc@student.42.fr>                      +#+  +:+       +#+        */
+/*   By: biacast5 <biacast5@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/26 22:04:51 by pc                #+#    #+#             */
-/*   Updated: 2022/06/28 21:24:50 by pc               ###   ########.fr       */
+/*   Created: 2022/06/26 22:04:51 by biacast5          #+#    #+#             */
+/*   Updated: 2022/07/02 17:28:57 by biacast5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int    ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-    if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))    {
-        return 1;
-    } else {
-        return 0;
-    }
-;}
-
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
 
 // #include <stdio.h>
-// int main()
+
+// int	main(void)
 // {
-    // int c = 'b';
-    // printf("\nIf result = 1 -> your input is an alphabet letter. If result = 0 -> not a letter!");
-    // printf("\nResult  : %d", ft_isalpha(c));
-    // printf("\n");
+// 	int	c;
+
+// 	c = '*';
+// 	if (ft_isalpha(c))
+// 	{
+// 		printf("Your input is an alphabet letter\n");
+// 	}
+// 	else
+// 	{
+// 		printf("This is NOT an alphabet character \n");
+// 	}
 // }
