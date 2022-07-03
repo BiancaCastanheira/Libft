@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: biacast5 <biacast5@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/26 22:04:51 by biacast5          #+#    #+#             */
-/*   Updated: 2022/07/03 17:24:19 by biacast5         ###   ########.fr       */
+/*   Created: 2022/07/03 17:33:27 by biacast5          #+#    #+#             */
+/*   Updated: 2022/07/03 17:36:24 by biacast5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+int	ft_isascii(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+	if ((c >= 0 && c <= 127))
 	{
 		return (1);
 	}
@@ -28,13 +28,13 @@ int	ft_isalpha(int c)
 // {
 // 	int	c;
 
-// 	c = '!';
-// 	if (ft_isalpha(c))
+// 	c = 131;
+// 	if (ft_isascii(c))
 // 	{
-// 		printf("Your input is an alphabet letter\n");
+// 		printf("Your input is a 7-bit US-ASCII character\n");
 // 	}
 // 	else
 // 	{
-// 		printf("This is NOT an alphabet character \n");
+// 		printf("This is NOT a 7-bit US-ASCII character\n");
 // 	}
 // }
