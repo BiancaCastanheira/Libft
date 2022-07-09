@@ -6,7 +6,7 @@
 /*   By: biacast5 <biacast5@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/03 18:03:27 by biacast5          #+#    #+#             */
-/*   Updated: 2022/07/03 18:04:44 by biacast5         ###   ########.fr       */
+/*   Updated: 2022/07/09 15:51:42 by biacast5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,13 @@ int	ft_isalnum(int c)
 }
 
 // #include <stdio.h>
+// #include <ctype.h>
 
 // int	main(void)
 // {
 // 	int	c;
 
-// 	c = '/';
+// 	c = '?';
 // 	if (ft_isalnum(c))
 // 	{
 // 		printf("Your input is an alphanumeric character\n");
@@ -41,4 +42,5 @@ int	ft_isalnum(int c)
 // 	{
 // 		printf("This is NOT an alphanumeric character\n");
 // 	}
+// 	printf("Function default value: %d \n", isalnum(c));
 // }

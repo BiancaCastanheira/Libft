@@ -6,7 +6,7 @@
 /*   By: biacast5 <biacast5@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/03 18:54:39 by biacast5          #+#    #+#             */
-/*   Updated: 2022/07/03 18:55:45 by biacast5         ###   ########.fr       */
+/*   Updated: 2022/07/09 15:52:43 by biacast5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,13 @@ int	ft_isprint(int c)
 }
 
 // #include <stdio.h>
+// #include <ctype.h>
 
 // int	main(void)
 // {
 // 	int	c;
 
-// 	c = 5;
+// 	c = '_';
 // 	if (ft_isprint(c))
 // 	{
 // 		printf("Your input is a representation of a printable character\n");
@@ -37,4 +38,5 @@ int	ft_isprint(int c)
 // 	{
 // 		printf("This is NOT a printable character\n");
 // 	}
+// 	printf("Function default value: %d \n", isprint(c));
 // }

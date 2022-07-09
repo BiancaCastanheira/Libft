@@ -6,7 +6,7 @@
 /*   By: biacast5 <biacast5@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 20:31:55 by biacast5          #+#    #+#             */
-/*   Updated: 2022/07/04 20:36:40 by biacast5         ###   ########.fr       */
+/*   Updated: 2022/07/09 15:52:58 by biacast5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,5 @@ size_t	ft_strlen(const char *s)
 // 	char s[] = "42 - the meaning of life, the universe, and everything";
 
 // 	printf("The lengh of your input is: %zu \n", ft_strlen(s));
+// 	printf("Function default value: %zu \n", strlen(s));
 // }
