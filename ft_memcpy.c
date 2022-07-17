@@ -6,13 +6,13 @@
 /*   By: biacast5 <biacast5@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 22:12:21 by biacast5          #+#    #+#             */
-/*   Updated: 2022/07/16 22:13:36 by biacast5         ###   ########.fr       */
+/*   Updated: 2022/07/17 14:28:56 by biacast5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void	*ft_memcpy(void *restrict dest, const void *restrict src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	char	*dest2;
 	char	*src2;
