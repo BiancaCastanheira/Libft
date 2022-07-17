@@ -6,7 +6,7 @@
 /*   By: biacast5 <biacast5@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 23:41:45 by biacast5          #+#    #+#             */
-/*   Updated: 2022/07/16 23:43:08 by biacast5         ###   ########.fr       */
+/*   Updated: 2022/07/17 10:45:48 by biacast5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,19 +36,22 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-// #include <stdio.h>
-// int	main(void)
-// {
-// 	char srt1test[] = "BLACKHOLE";
-// 	char srt2test[] = "SURVIVER!";
-// 	char str1[] = "Blackhole";
-// 	char str2[] = "Surviver!";
+#include <stdio.h>
+int	main(void)
+{
+	char srt1test[] = "BLACKHOLE";
+	char srt2test[] = "SURVIVER!";
+	char str1[] = "Blackhole";
+	char str2[] = "Surviver!";
 
-// 	printf("Before ft_memmove: %s \n", str1);
+	printf("Before ft_memmove: %s \n", str1);
 
-// 	ft_memmove(str1, str2, 3);
-// 	printf("Result after ft_memmove: %s \n", str1);
+	memcpy(str1, str2,  sizeof(str2));
+	printf("Result after memcpy: %s \n", str1);
 
-// 	memmove(srt1test, srt2test, 3);
-// 	printf("Function default value: %s \n", srt1test);
-// }
+	ft_memmove(str1, str2,  sizeof(str2));
+	printf("Result after ft_memmove: %s \n", str1);
+
+	memmove(srt1test, srt2test,  sizeof(str2));
+	printf("Function default value: %s \n", srt1test);
+}
