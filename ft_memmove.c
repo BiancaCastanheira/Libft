@@ -6,7 +6,7 @@
 /*   By: biacast5 <biacast5@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 23:41:45 by biacast5          #+#    #+#             */
-/*   Updated: 2022/07/17 10:45:48 by biacast5         ###   ########.fr       */
+/*   Updated: 2022/07/17 10:59:56 by biacast5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,6 @@ int	main(void)
 	char str2[] = "Surviver!";
 
 	printf("Before ft_memmove: %s \n", str1);
-
-	memcpy(str1, str2,  sizeof(str2));
-	printf("Result after memcpy: %s \n", str1);
 
 	ft_memmove(str1, str2,  sizeof(str2));
 	printf("Result after ft_memmove: %s \n", str1);
